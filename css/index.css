@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+:root {
+    --black: #000;
+    --purple: #7510F7;
+    --purpleLight: #B68DEC;
+    /* --blueDark: #203864; */
+    --blueDark: #003b59 ;
+    --greyLight: #EEE;
+    --blackLight: #707070;
+    --yellowCompl: #f7b610;
+}
+
+/* ------ Header -------- */
+.body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wrapper {
+    display: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.header {
+    border: 3px solid var(--black);
+    border-bottom: initial;
+    display: flex;
+    padding: 10px 0;
+    height: 70px;
+}
+
+.header__logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.header__img {
+    width: 50px;
+}
+
+.header__nav {
+    width: 70%;
+}
+
+.header__ul {
+    height: 100%;
+}
+
+.header__li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.header__btnSayHello {
+    border: 2px solid var(--purple);
+    /* padding: 10px 20px; */
+    border-radius: 30px;
+    color: var(--purple);
+    font-weight: 500;
+    transition: .8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7em;
+    height: 2.5em;
+}
+.header__btnSayHello:hover {
+    color: white;
+    background-color: var(--purple);
+    transition: .8s;
+    width: 6.5em;
+    height: 2.3em;
+
+}
+/* ----- Main ----- */
+.main {
+    border-top: initial;
+    border: 3px solid var(--black);
+    border-bottom: initial;
+}
+/* Hero */
+.hero {
+    width: 100%;
+    height: 710px;
+    border-top: initial;
+    border-bottom: initial;
+}
+
+.hero__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__title {
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.hero__subtitle {
+    margin-top: 10px;
+}
+
+.hero__imgHero {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.about {
+    background-color: var(--blueDark);
+    /* background-color: var(--yellowCompl); */
+    border-top: 3px solid var(--black);
+    border-bottom: 3px solid var(--black); 
+}
+
+.about__text {
+    color: white;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: center;
+    padding: 70px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.experience {
+    /* border: 3px solid var(--purple); */
+    border-radius: 8px;
+    text-align: center;
+    color: var(--blackLight);
+    margin: 80px 3em;
+    padding: 20px 0;
+    box-shadow: 0 0 10px var(--purple), 0 0 40px var(--purpleLight);
+    transition: .3s;
+}
+.experience:hover {
+    /* box-shadow: 0 0 10px var(--purple), 0 0 10px var(--purpleLight); */
+
+} 
+
+.experience__title {
+    font-family: 'Play', sans-serif;
+}
+
+.experience__container {
+    /* border: 3px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.experience__containerImg {
+    /* border: 3px solid orangered; */
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.laravel {
+    width: 170px;
+    height: 170px;
+}
+
+.html {
+    width: 150px;
+    height: 150px;
+}
+
+.css {
+    width: 115px;
+    height: 140px;
+}
+.js {
+    width: 120px;
+    height: 120px;
+}
+.php {
+    width: 140px;
+    height: 85px;
+}
+.bootstrap {
+    width: 160px;
+    height: 120px;
+}
+.sql {
+    width: 120px;
+    height: 100px;
+}
+.github {
+    width: 120px;
+    height: 120px;
+}
+.react {
+    width: 200px;
+    height: 140px;
+}
+.angular {
+    width: 120px;
+    height: 120px;
+}
+.mongo {
+    width: 100px;
+    height: 120px;
+}
+.uipath {
+    width: 150px;
+    height: 60px;
+}
+.scrum {
+    width: 160px;
+    height: 80px;
+}
+.extra {
+    width: 200px;
+}
+.pbi {
+    width: 100px;
+    height: 100px;
+
+}
+
+.companies {
+    background-color: var(--greyLight);
+    color: var(--blackLight);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 140px;
+}
+
+.companies__container{
+    /* border: 3px solid red; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.companies__containerImg {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.companies__containerImg-img {
+    width: 150px;
+    /* border: .5px solid var(--blackLight); */
+}
+
+
+
+/* --- Footer --- */
+.space {
+    border: 3px solid var(--black);
+    height: 140px;
+    border-top: initial;
+    border-bottom: initial;
+}
+
+.footer {
+    background: var(--purple);
+    border: 3px solid var(--black);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.footer__container-img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer__container-subtitle {
+    font-weight: 300;
+    font-family: 'Play', sans-serif;
+    margin-top: 20px;
+}
+
+.footer__refs {
+    margin-top: 70px;
+    text-shadow: 4px 4px 3px black;
+}
+.footer__container-email {
+    color: white;
+    font-size: 40px;
+    margin-right: 20px;
+}
+.footer__container-email:hover {
+    color: white;
+    font-size: 40px;
+    margin-right: 20px;
+    text-shadow: 3px 3px 2px black;
+}
+.footer__container-whatsapp {
+    color: white;
+    font-size: 40px;
+}
+.footer__container-whatsapp:hover {
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 3px 2px black;
+}
+
+
+/* --- Responsive Design --- */
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .about__text {
+        padding: 50px 5px;
+    }
+
+    .hero__subtitle {
+        margin-top: 5px;
+    }
+
+    .tcmemory {
+        width: 90%;
+    }
+
+    .scrum {
+        width: 100%;
+    }
+
+    .about__text { 
+        max-width: initial;
+    }
+}
+
+
+/* Ipad */
+@media screen and (min-width: 768px) {
+    .about__text {
+        padding: 50px 20px;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 1024px) {
+    .about__text {
+        padding: 70px;
+    }
+}
+
+
+
+/* --- Icon moon --- */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?cc9k2');
+    src:  url('fonts/icomoon.eot?cc9k2#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?cc9k2') format('truetype'),
+      url('fonts/icomoon.woff?cc9k2') format('woff'),
+      url('fonts/icomoon.svg?cc9k2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-search:before {
+    content: "\e986";
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-heart:before {
+    content: "\e9da";
+  }
+  .icon-facebook:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-pinterest:before {
+    content: "\ead1";
+  }
