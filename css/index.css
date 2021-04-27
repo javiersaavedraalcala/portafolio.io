@@ -141,20 +141,18 @@ li {
 
 .about {
     background-color: var(--blueDark);
-    /* background-color: var(--yellowCompl); */
     border-top: 3px solid var(--black);
     border-bottom: 3px solid var(--black); 
+    padding: 80px 50px;
 }
 
 .about__text {
     color: white;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: .5px;
     font-size: 20px;
     text-align: center;
-    padding: 70px;
-    max-width: 70%;
-    margin: 0 auto;
 }
 
 .experience {
@@ -167,104 +165,77 @@ li {
     box-shadow: 0 0 10px var(--purple), 0 0 40px var(--purpleLight);
     transition: .3s;
 }
-.experience:hover {
-    /* box-shadow: 0 0 10px var(--purple), 0 0 10px var(--purpleLight); */
-
-} 
 
 .experience__title {
     font-family: 'Play', sans-serif;
 }
 
 .experience__container {
-    /* border: 3px solid black; */
+    margin-top: 30px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
+    gap: 40px;
 }
 
-.experience__containerImg {
-    /* border: 3px solid orangered; */
-    width: 170px;
-    height: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+#slider{
+    overflow: hidden;
+    width: 500px;
+    height: auto;
+    border: 1px solid #F2F3F4;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0#F2F3F4;
 }
 
-.laravel {
-    width: 170px;
-    height: 170px;
+#slider figure{
+    position: relative;
+    width: 1000%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
 }
 
-.html {
-    width: 150px;
-    height: 150px;
+#slider figure img{
+    width: 10%;
+    float: left;
 }
 
-.css {
-    width: 115px;
-    height: 140px;
+#slider p {
+    padding: 0 2px;
 }
-.js {
-    width: 120px;
-    height: 120px;
-}
-.php {
-    width: 140px;
-    height: 85px;
-}
-.bootstrap {
-    width: 160px;
-    height: 120px;
-}
-.sql {
-    width: 120px;
-    height: 100px;
-}
-.github {
-    width: 120px;
-    height: 120px;
-}
-.react {
-    width: 200px;
-    height: 140px;
-}
-.angular {
-    width: 120px;
-    height: 120px;
-}
-.vue {
-    width: 120px;
-    height: 120px;
-}
-.ionic {
-    width: 120px;
-    height: 120px;
-}
-.mongo {
-    width: 100px;
-    height: 120px;
-}
-.uipath {
-    width: 150px;
-    height: 60px;
-}
-.scrum {
-    width: 160px;
-    height: 80px;
-}
-.extra {
-    width: 200px;
-}
-.pbi {
-    width: 100px;
-    height: 100px;
+ 
 
+@keyframes slider{
+    0% {
+        left: 0;
+    } 
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    } 
+    50% {
+        left: -200%;
+    } 
+    70% {
+        left: -200%;
+    } 
+    75% {
+        left: -300%;
+    } 
+    95% {
+        left: -300%;
+    } 
 }
+
+
+
+ 
 
 .companies {
     background-color: var(--greyLight);
@@ -354,45 +325,6 @@ li {
     text-shadow: 3px 3px 2px black;
 }
 
-
-/* --- Responsive Design --- */
-/* Mobile */
-@media screen and (max-width: 767px) {
-    .about__text {
-        padding: 50px 5px;
-    }
-
-    .hero__subtitle {
-        margin-top: 5px;
-    }
-
-    .tcmemory {
-        width: 90%;
-    }
-
-    .scrum {
-        width: 100%;
-    }
-
-    .about__text { 
-        max-width: initial;
-    }
-}
-
-
-/* Ipad */
-@media screen and (min-width: 768px) {
-    .about__text {
-        padding: 50px 20px;
-    }
-}
-
-/* PC */
-@media screen and (min-width: 1024px) {
-    .about__text {
-        padding: 70px;
-    }
-}
 
 
 
