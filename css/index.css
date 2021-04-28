@@ -230,10 +230,6 @@ li {
     }  
 }
 
-
-
- 
-
 .companies {
     background-color: var(--greyLight);
     color: var(--blackLight);
@@ -323,6 +319,24 @@ li {
 }
 
 
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 2px;
+    }
+
+    .experience {
+        padding: 5px 0;
+        margin: 40px 10px;
+    }
+
+    #slider {
+        margin-top: 30px;
+    }
+
+    .experience h5 {
+        margin-top: 20px;
+    }
+}
 
 
 /* --- Icon moon --- */
