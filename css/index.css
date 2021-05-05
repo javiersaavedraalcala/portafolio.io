@@ -143,7 +143,7 @@ li {
     background-color: var(--blueDark);
     border-top: 3px solid var(--black);
     border-bottom: 3px solid var(--black); 
-    padding: 80px 50px;
+    padding: 80px 120px;
 }
 
 .about__text {
@@ -168,14 +168,15 @@ li {
 
 .experience__title {
     font-family: 'Play', sans-serif;
+    margin-top: 20px;
 }
 
 .experience__container {
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 60px;
 }
 
 
@@ -183,7 +184,7 @@ li {
     overflow: hidden;
     width: 500px;
     height: auto;
-    border: 1px solid #F2F3F4;
+    border: 2px solid #EAEDED;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0#F2F3F4;
 }
@@ -202,7 +203,13 @@ li {
 }
 
 #slider p {
-    padding: 0 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 12px;
+}
+
+.span-text{
+    font-weight: 600;
 }
  
 
@@ -335,6 +342,15 @@ li {
 
     .experience h5 {
         margin-top: 20px;
+    }
+
+    .experience__container {
+        margin-top: 20px;
+    }
+
+    #slider p {
+        padding-left: 6px;
+        padding-right: 6px;
     }
 }
 
