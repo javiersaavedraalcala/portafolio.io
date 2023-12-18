@@ -340,7 +340,7 @@ li {
     }
 
     #slider {
-        margin-top: 30px;
+        margin-top: 18px;
     }
 
     .experience h5 {
@@ -355,6 +355,10 @@ li {
     #slider p {
         padding-left: 6px;
         padding-right: 6px;
+    }
+
+    .companies__containerImg-img {
+        width: 80px;
     }
  
 }
